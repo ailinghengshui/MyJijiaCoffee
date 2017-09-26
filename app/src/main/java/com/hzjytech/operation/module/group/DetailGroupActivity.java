@@ -66,6 +66,7 @@ public class DetailGroupActivity extends BaseActivity implements OnInfoClickList
     private static final int REQUEST_MACHINE_EDIT = 114;
     public static final String AUTH_GROUP="1.1";
     public static final String AUTH_MACHINE="1.2";
+    private static final int REQUEST_ADD_AD = 115;
     @BindView(R.id.titleBar)
     TitleBar titleBar;
     @BindView(R.id.rv_group)
@@ -281,7 +282,10 @@ public class DetailGroupActivity extends BaseActivity implements OnInfoClickList
      * 修改广告图片
      */
     private void editPhotos() {
-
+        Intent intent = new Intent(this, ChangeAdActivity.class);
+        intent.putExtra("groupInfo",groupInfo);
+        intent.putExtra("groupId",groupId);
+        startActivityForResult(intent, REQUEST_ADD_AD);
     }
 
     /**

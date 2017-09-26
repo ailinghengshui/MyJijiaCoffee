@@ -171,4 +171,5 @@
     <string name="edit_menu_item">编辑单品属性</string>
     <string name="add_pack">添加套餐</string>
     <string name="add_menu_item">添加单品</string>
+    <string name="set_add">广告设置</string>
 </resources>

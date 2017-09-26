@@ -104,6 +104,11 @@
             android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"
             >
             </activity>
+        <activity android:name="com.hzjytech.operation.module.group.ChangeAdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan"
+            >
+            </activity>
 
         <activity android:name=".widgets.selectfrags.SelectActivity"
             android:screenOrientation="portrait"
